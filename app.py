@@ -21,7 +21,7 @@ load_dotenv()
 PDF_DATA_DIR = "./pdf_data/"
 STORAGE_DIR = "./storage/"
 
-openai.api_key = os.environ.get('OPENAI_API_KEY')
+openai.api_key = st.secrets['OPENAI_API_KEY']
 os.makedirs(PDF_DATA_DIR, exist_ok=True)
 
 class PDFReader:
