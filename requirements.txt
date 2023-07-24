@@ -1,3 +1,4 @@
 streamlit_chat
 streamlit
 python-dotenv
+llama_index
