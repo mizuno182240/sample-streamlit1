@@ -25,7 +25,7 @@ os.makedirs(PDF_DATA_DIR, exist_ok=True)
 
 class PDFReader:
     def __init__(self):
-        self.pdf_reader = download_loader("PDFReader")()
+        self.pdf_reader = download_loader("PDFReader",custom_path=os.getcwd())()
 
     def load_data(self, file_name):
         return self.pdf_reader.load_data(file=Path(PDF_DATA_DIR + file_name))
