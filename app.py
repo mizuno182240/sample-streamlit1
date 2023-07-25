@@ -3,7 +3,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 import streamlit as st
 from streamlit_chat import message
-import openai
 
 from llama_index import (
     download_loader,
@@ -21,7 +20,7 @@ load_dotenv()
 PDF_DATA_DIR = "./pdf_data/"
 STORAGE_DIR = "./storage/"
 
-openai.api_key = st.secrets['OPENAI_API_KEY']
+OpenAI.api_key = st.secrets['OPENAI_API_KEY']
 os.makedirs(PDF_DATA_DIR, exist_ok=True)
 
 class PDFReader:
