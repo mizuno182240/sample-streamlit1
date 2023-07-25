@@ -101,7 +101,6 @@ def main():
     if clear_chat:
         st.session_state["chat_history"] = []
 
-    st.title(os.getcwd())
     pdf_reader = PDFReader()
     response_generator = QAResponseGenerator(selected_model, pdf_reader)
     # ボタンがクリックされた場合の処理
