@@ -2,4 +2,4 @@ streamlit_chat
 streamlit
 python-dotenv
 openai
-llama_index
+llama_index == 3.9.16
