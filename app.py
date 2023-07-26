@@ -22,6 +22,7 @@ STORAGE_DIR = "./storage/"
 
 OpenAI.api_key = st.secrets['OPENAI_API_KEY']
 os.makedirs(PDF_DATA_DIR, exist_ok=True)
+os.chmod("/home/adminuser/venv/lib/python3.9/site-packages/llama_index/readers/",0o555)
 
 class PDFReader:
     def __init__(self):
